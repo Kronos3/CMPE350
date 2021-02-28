@@ -9,7 +9,7 @@ Array: .word 1, 2, 3, 4, 5
     .text
 main:
     # RUN Question 1
-    j q1_main
+    j Reduce
 
     # RUN question 2
     # j q2_main
@@ -18,7 +18,7 @@ main:
     # Exit with no action
     j Exit
 
-q1_main:
+Reduce:
     # initialize the inputs
     la    $s1, Array    #load address of the Array in $s1
     li    $s2, 5        # size of array in $s2
