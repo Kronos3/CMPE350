@@ -6,7 +6,6 @@
 
 # We place some data in the array to work with
 	.data
-Array: .word 5, 5, 5, 5, 5, 2, 0, 0
 
 	.globl	main
 	
