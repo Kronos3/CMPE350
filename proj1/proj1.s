@@ -42,7 +42,7 @@ Factorial:
 
     # Call factorial recursively
     addi $a0, $a0, -1  # n--
-    jal factorial      # factorial(n - 1)
+    jal Factorial      # factorial(n-1)
 
     # (n - 1)! stored in v0
     # restore previous value of $a0 and $ra
@@ -50,7 +50,7 @@ Factorial:
     lw $ra, 4($sp)
 
     # n! = n * (n-1)!
-    mul $v0, $v0, $a0
+    mul $v1, $v1, $a0
 
 f_end:
     # Return value already stored in return register
