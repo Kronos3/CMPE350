@@ -1,0 +1,27 @@
+Andrei Tumbar
+Justin Shaytar
+
+CMPE-350 Project 1
+
+Question 1:
+Text Memory:
+    Text memory is where the instructions for the program
+    are kept. This portion of memory is usually kept read-only.
+
+Data Memory:
+    Data memory is RAM used to store data and can be written
+    to and read from arbitrarily.
+
+    You can define/allocate space in the data memory in the
+    assembly file by adding to the `.data` section
+
+Integer Registers:
+    Integer registers are used by the CPU to do most operations.
+    They are used to store data within and across subroutines.
+
+Question 2:
+QTSpim replaces the `li $a0, 4` instruction with the equivalent
+`ori $a0, $zero, 4` instruction. They are the same because the
+`$zero` register will always output `0` and `0 | 4 == 4`.
+
+
